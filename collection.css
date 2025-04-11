@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo-container h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  header .tagline {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #d4af37;
+  }
+  
+  /* Collection Page */
+  .collection-header {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .collection-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .collection-filters {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .collection-filters select {
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid layout */
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product img {
+    width: 80%; /* Reduced size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  /* Colorful Gradient Effect for Images */
+  .product img:hover {
+    filter: brightness(1.1) saturate(1.2) contrast(1.2); /* Adds vibrancy on hover */
+  }
+  
+  /* Product Text */
+  .product .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product .description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .product .add-to-cart {
+    padding: 0.8rem 1.5rem;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .product .add-to-cart:hover {
+    background-color: #b38c2c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-section {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  footer .social-icons a:hover {
+    color: #d4af37;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
